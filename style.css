@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.1rem;
   list-style-type: none;
   text-decoration: none;
   outline: none;
@@ -31,6 +32,26 @@ body {
 .text-white{
   color: white;
 }
+
+.btn{
+  /* background-color: rgb(230, 159, 8); */
+  background-color: #fff;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  border: none;
+  box-sizing: 0.1rem 0.1rem 0.1rem #222;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+
+.btn:hover{
+  color: red;
+  transform: scale(1.2);
+  font-weight: 700;
+}
 /* Reset code and common code ends here  */
 
 /* Header starts here  */
@@ -48,9 +69,9 @@ header{
   min-height: 5vh;
 }
 
-.logo-figure{
+/* .logo-figure{
   border: 1px solid #fff;
-}
+} */
 
 .logo{
   font-size: 4rem;
@@ -68,12 +89,12 @@ nav ul {
 nav ul li {
   padding: 1rem;
   transition: all 0.4s linear;
-  transform: scale(1.2);
 }
 
 nav ul li:hover{
   background-color: brown;
   border-radius: 0.6rem;
+  transform: scale(1.2);
 }
 
 .nav__link{
@@ -125,6 +146,75 @@ nav ul li:hover{
 }
 /* Blog-banner section ends here  */
 
+/* About me section starts here  */
+#blog-about{
+  background-color: #4c4c4c;
+}
+
+.section-center{
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-heading{
+  font-size: 6rem;
+  text-align: center;
+  font-family:"Italiano", cursive;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card{
+  flex: 1;
+  border-radius: 0.6rem;
+  background-color: #a09d9d;
+  padding: 3rem 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s linear;
+}
+
+.card:hover{
+  transform: scale(1.1) skew(2deg) translate(0.5rem, -0.9rem);
+}
+
+.card__header{
+  font-size: 3rem;
+}
+
+.card__description{
+  font-size: 1.6rem;
+  padding: 0.4rem 0;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.card__btn{
+  width: 80%;
+  /* padding: 0.8rem 0.8rem;
+  border: 2px solid gray;
+  border-radius: 0.9rem;
+  transition: all 0.3s linear; */
+}
+
+/* .card__btn:hover{
+  cursor: pointer;
+  color: red;
+  transform: scale(1.2);
+  font-weight: 900;
+} */
+/* About me section ends here  */
+
 /* Responsiveness starts here  */
 /* Big screen devices  */
 @media screen and (max-width: 992px) {
@@ -167,6 +257,12 @@ nav ul li:hover{
     margin-bottom: 5rem;
   }
 
+  .cards{
+    width: 80%;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
 }
 
 /* Small screen devices  */
@@ -196,6 +292,15 @@ nav ul li:hover{
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
+  }
+
+  #blog-about{
+    min-height: auto;
+  }
+
+  .cards{
+    width: 90%;
+    margin: 2rem;
   }
 }
 /* Responsiveness ends here  */
