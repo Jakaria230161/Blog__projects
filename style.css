@@ -24,3 +24,94 @@ body {
   box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
 }
 /* Reset code and common code ends here  */
+
+/* Header starts here  */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 2rem 1rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 5vh;
+}
+
+.logo-figure{
+  border: 1px solid #fff;
+}
+
+.logo{
+  font-size: 4rem;
+}
+
+/* nav li {
+  display: inline-block;
+} */
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li {
+  padding: 1rem;
+  transition: all 0.4s linear;
+  transform: scale(1.2);
+}
+
+nav ul li:hover{
+  background-color: brown;
+  border-radius: 0.6rem;
+}
+
+.nav__link{
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+/* Header ends here  */
+
+/* Responsiveness starts here  */
+/* Big screen devices  */
+@media screen and (max-width: 992px) {
+  html{
+    font-size: 60.5%;
+  }
+
+  nav ul{
+    padding-right: 2.5rem;
+  }
+}
+
+/* Medium screen devices  */
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 55.5%;
+  }
+
+  nav ul{
+    padding-right: 2.5rem;
+  }
+}
+
+/* Small screen devices  */
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 48.5%;
+  }
+
+  header{
+    flex-direction: column;
+  }
+
+  nav ul{
+    flex-direction: column;
+    padding-left: 5.5rem;
+    margin: 2rem;
+  }
+}
+/* Responsiveness ends here  */
