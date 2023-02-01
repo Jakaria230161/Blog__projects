@@ -1,0 +1,26 @@
+/* Reset code and common code starts here  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+}
+
+html {
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  width: 100rem;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+/* Reset code and common code ends here  */
