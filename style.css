@@ -1,4 +1,8 @@
 /* Reset code and common code starts here  */
+:root{
+  --transition: all 0.3s linear;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,7 +48,7 @@ body {
   box-sizing: 0.1rem 0.1rem 0.1rem #222;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  transition: all 0.3s linear;
+  transition: var(--transition);
 }
 
 .btn:hover{
@@ -88,7 +92,7 @@ nav ul {
 
 nav ul li {
   padding: 1rem;
-  transition: all 0.4s linear;
+  transition: var(--transition);
 }
 
 nav ul li:hover{
@@ -162,7 +166,8 @@ nav ul li:hover{
 .section-heading{
   font-size: 6rem;
   text-align: center;
-  font-family:"Italiano", cursive;
+  font-family: "Italiano", cursive;
+  font-style: italic;
 }
 
 .cards{
@@ -181,7 +186,7 @@ nav ul li:hover{
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  transition: all 0.3s linear;
+  transition: var(--transition);
 }
 
 .card:hover{
@@ -214,6 +219,36 @@ nav ul li:hover{
   font-weight: 900;
 } */
 /* About me section ends here  */
+
+/* Archives section starts here  */
+.archives-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  border-top: 0.1rem solid gray;
+  border-bottom: 0.1rem solid gray;
+}
+
+.archives__lists{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.archives__img{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid gray; */
+  border-radius: 0.6rem;
+  transition: var(--transition);
+}
+
+.archives__img:hover{
+  transform: scale(1.2);
+}
+/* Archives section ends here  */
 
 /* Responsiveness starts here  */
 /* Big screen devices  */
@@ -263,6 +298,9 @@ nav ul li:hover{
     margin: 2rem;
   }
 
+  #archives{
+    min-height: auto;
+  }
 }
 
 /* Small screen devices  */
@@ -301,6 +339,14 @@ nav ul li:hover{
   .cards{
     width: 90%;
     margin: 2rem;
+  }
+
+  .archives__lists{
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem;
+    padding: 2rem;
+    width: 90%;
   }
 }
 /* Responsiveness ends here  */
