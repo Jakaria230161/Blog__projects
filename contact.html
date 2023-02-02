@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact me</title>
+
+  <!-- Google font cdn link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon here -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+  <!-- CSS link here  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- Header section starts here -->
+  <header id="blog-header">
+    <figure class="logo-figure">
+      <i class="fa-solid fa-z logo"></i>
+    </figure>
+    <i class="fas fa-bars fa-4x" id="menu__icon"></i>
+
+    <!-- Nav portion starts here  -->
+    <nav id="menu" class="hidden">
+      <ul>
+        <li><a href="./index.html" class="nav__link">Home</a></li>
+        <li><a href="#blog-about" class="nav__link">About</a></li>
+        <li><a href="#contact-section" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Nav portion ends here  -->
+  </header>
+  <!-- Header section ends here -->
+
+  <!-- About me section starts here  -->
+  <section id="blog-about" class="section-center">
+    <h2 class="section-heading text-white">About Me</h2>
+    <div class="cards">
+      <div class="card">
+        <h3 class="card__header">Education</h3>
+        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae officiis dolor odit a facilis quia quod qui velit non autem.</p>
+        <button class="btn card__btn">Read More</button>
+      </div>
+      <div class="card">
+        <h3 class="card__header">Education</h3>
+        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae officiis dolor odit a facilis quia quod qui velit non autem.</p>
+        <button class="btn card__btn">Read More</button>
+      </div>
+      <div class="card">
+        <h3 class="card__header">Education</h3>
+        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae officiis dolor odit a facilis quia quod qui velit non autem.</p>
+        <button class="btn card__btn">Read More</button>
+      </div>
+    </div>
+  </section>
+  <!-- About me section ends here  -->
+
+  <!-- Contact section starts here  -->
+  <section id="contact-section" class="section-center">
+    <h2 class="section-heading text-justify text-white">Contact Me</h2>
+    <form>
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" autocomplete="name" required placeholder="Enter your name">
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" autocomplete="email" required placeholder="Enter your email address">
+      </div>
+      <div class="form-control">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Leave a message for me"></textarea>
+      </div>
+      <div class="form-control form-btn-field">
+        <button class="btn contact__btn">Submit</button>
+      </div>
+    </form>
+  </section>
+  <!-- Contact section ends here  -->
+
+  <!-- Footer section starts here  -->
+  <footer class="footer">
+    <p class="copyright__text">
+      Copyright &copy; by Muhammad Jakaria Mahmud. All rights reserved.
+    </p>
+    <nav class="footer__nav">
+      <a href="#blog-about" class="footer__link">
+        <i class="fa-solid fa-house footer__icon"></i></a>
+      <a href="https://www.facebook.com/Muhammad.Jakaria.Mahmud.230161/" target="_blank" class="footer__link">
+        <i class="fa-brands fa-facebook footer__icon"></i></a>
+      <a href="https://github.com/Jakaria230161" target="_blank" class="footer__link">
+        <i class="fa-brands fa-github footer__icon"></i></a>
+      <a href="https://www.linkedin.com/in/jakaria230161/" target="_blank" class="footer__link">
+        <i class="fa-brands fa-linkedin footer__icon"></i></a>
+    </nav>
+  </footer>
+  <!-- Footer section ends here  -->
+
+  
+  <!-- JavaScript link here  -->
+  <script src="./index.js"></script>
+
+  </main>
+</body>
+</html>
